@@ -1,0 +1,381 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+
+    background-color: #161B30;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+
+    background-color: #2A2F45;
+}
+
+.mobMenu {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.logo a {
+    position: relative;
+    right: 10%;
+
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logoImg { 
+    position: relative;
+    top: 14%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 65px;
+}
+
+.navA {
+    display: flex;
+    align-items: center;
+
+    color: #8A91AB;
+}
+
+.home, .history, .about {
+    display: flex;
+    padding: 20px;
+}
+
+.active {
+    color: #FFFFFF;
+}
+
+.menu img {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+
+.menu a {
+    align-self: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.inputWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 145px 0px 55px 0px;
+}
+
+input {
+    padding: 0 20px;
+    width: 560px;
+    height: 56px;
+    border: 0px;
+    border-radius: 2px;
+
+    background-color: #2A2F45;
+    color: #8A91AB;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 100px;
+} 
+
+.city {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    width: 270px;
+    height: 190px;
+    
+    background-color: #292E44;
+    color: #FFFFFF;
+
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+}
+
+.city img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.content .temperature {
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+}
+
+/* main {
+    display: none;
+} */
+
+.searchResult {
+    width: 100vw;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: radial-gradient(80.36% 80.36% at 50% 0%, #5A607C 0%, #161B30 100%);
+    color: #FFFFFF;
+}
+
+
+.cityName {
+    padding: 10px;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.cityDiscription {
+    padding: 5px;
+}
+
+.cityTemp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 130px;
+    font-weight: 600;
+}
+
+.cityImg {
+    width: 206px;
+    height: 206px;
+}
+
+.cityPressure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cityPressure img {
+    padding-right: 10px;
+}
+
+.citySunset {
+    padding: 30px;
+    color: #8A91AB;
+}
+
+.histCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+    padding-top: 80px;
+    color:white;
+}
+
+.cardHist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 331px;
+    height: 71px;
+    margin: 10px;
+    background-color: #292E44;
+}
+
+.infoCity p {
+    margin: 0;
+    padding: 10px;
+}
+
+.tempHist p {
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.aboutApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-top: 80px;
+    max-width: 44vw;
+
+    color:#FFFFFF;
+}
+
+.aboutApp h1 {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.aboutApp h2 {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.aboutApp ul {
+    padding: 20px;
+}
+
+.aboutApp li {
+    padding-bottom: 10px;
+    font-size: 16px;
+line-height: 150%;
+}
+
+.aboutApp li::marker {
+    color: #494F68;
+}
+
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .menu {
+        justify-content: flex-end;
+    }
+    .inputWrapper {
+        margin: 20px 0px 10px 0px;
+    }
+    .content {
+        max-width: 90vw;
+    }
+
+    .histCards {
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .cardHist {
+        border-radius: 6px;
+        font-size: 16px;
+    }
+    .aboutApp {
+        max-width: 90vw ;
+    }
+    .aboutApp ul {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper-header {
+        background-color: #161B30;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 57px;
+        background-color: #22263b;
+    }
+
+    .bottomMenu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+    }
+    .home, .history, .about {
+        padding: 0;
+    }
+
+    .stick {
+        width: 2px;
+        height: 24px;
+        background-color: #494F68;
+    }
+
+    input {
+        width: 80vw;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .city {
+        justify-content: space-between;
+        margin: 0;
+        border-radius: 6px;
+        width: 158px;
+        height: 190px;
+        background-color: #292E44;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .cityTemp {
+        font-size: 70px;
+    }
+    .cityImg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .searchResult {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}

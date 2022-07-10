@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherCheck in Izhevsk</title>
+  </head>
+  <body>
+    <header class="wrapper-header">
+      <div class="logo">
+        <img class="logoImg" src="./img/Logo.svg" alt="#" />
+        <a name="home" href="#">WeatherCheck</a>
+      </div>
+      <div class="menu">
+        <div class="home">
+          <a href="./index.html" class="navA active">
+            <img class="imgHome" src="./img/activeHome.svg" alt="#" />
+            Главная
+          </a>
+        </div>
+        <div class="history">
+          <a href="./history.html" class="navA">
+            <img class="imgHistory" src="./img/History.svg" alt="#" />
+            История
+          </a>
+        </div>
+        <div class="about">
+          <a class="navA" href="./AboutApp.html">
+            <img class="imgAbout" src="./img/AboutApp.svg" alt="#" />
+            О приложении
+          </a>
+        </div>
+      </div>
+      <div class="mobMenu">
+        <div class="bottomMenu">
+          <div class="home">
+            <a href="./index.html" class="navA active">
+              <img class="imgHome" src="./img/activeHome.svg" alt="#" />
+            </a>
+          </div>
+          <span class="stick"></span>
+          <div class="history">
+            <a href="./history.html" class="navA">
+              <img class="imgHistory" src="./img/History.svg" alt="#" />
+            </a>
+          </div>
+          <span class="stick"></span>
+          <div class="about">
+            <a class="navA" href="./AboutApp.html">
+              <img class="imgAbout" src="./img/AboutApp.svg" alt="#" />
+            </a>
+          </div>
+      </div>
+    </header>
+    <main>
+      <div class="inputWrapper">
+        <form action="./resultSearch.html" target="_self">
+          <input
+            type="text"
+            value=""
+            placeholder="Укажите город"
+            pattern="[А-Яа-яёЁ]{2,40}"
+            title="Введите название города на русском языке, состоящее не менее чем из двух символов. Например: Москва"
+          />
+        </form>
+      </div>
+      <div class="content"></div>
+    </main>
+    <div class="searchResult hide"></div>
+    <footer></footer>
+  </body>
+  <script type="module" src="./app.js"></script>
+</html>
